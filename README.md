@@ -3,7 +3,7 @@ The Drawer Manager class has the ability to swap Scaffold body contents, using a
 
 ![Drawer Manager 0](media/drawer_manager_0.png) ![Drawer Manager 1](media/drawer_manager_1.png) ![Drawer Manager 2](media/drawer_manager_2.png)
 
-![Drawer Manager Gif](media/drawer_manager.gif) ![Drawer Manager 3](media/drawer_manager_3.png)
+![Drawer Manager Gif](media/drawer_manager_ezgif_resize.gif) ![Drawer Manager 3](media/drawer_manager_3.png)
 
 ## Features
 
