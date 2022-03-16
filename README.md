@@ -3,11 +3,11 @@ The Drawer Manager class has the ability to swap Scaffold body contents, using a
 
 <table border="0">
   <tr>
-    <td><img width="100" src="media/drawer_manager_0.png"></td>
-    <td><img width="100" src="media/drawer_manager_1.png"></td>
-    <td><img width="100" src="media/drawer_manager_2.png"></td>
-    <td><img width="100" src="media/drawer_manager_3.png"></td>
-    <td><img width="100" src="media/drawer_manager_ezgif_resize.gif"></td>
+    <td><img width="120" src="media/drawer_manager_0.png"></td>
+    <td><img width="120" src="media/drawer_manager_1.png"></td>
+    <td><img width="120" src="media/drawer_manager_2.png"></td>
+    <td><img width="120" src="media/drawer_manager_3.png"></td>
+    <td><img width="120" src="media/drawer_manager_ezgif_resize.gif"></td>
   </tr>  
   <tr center>
     <td  align="center"><p>Open Drawer</p></td>
@@ -20,7 +20,7 @@ The Drawer Manager class has the ability to swap Scaffold body contents, using a
 
 ## Features
 
-The Drawer Manager is similar to the Android Drawer, in that it swaps out Widgets (like Android Fragments). It does this by notifying the Scaffold body of the changes needed for your selection using the DrawerManagerProvider's body property. This approach allows for a cleaner development experience.
+The Drawer Manager is similar to the Android Drawer, in that it swaps out Widgets (like Android Fragments). It does this by notifying the Scaffold body of the changes needed for your selection, using the DrawerManagerProvider's body property. This approach allows for a cleaner development experience.
 
 ```dart
 
