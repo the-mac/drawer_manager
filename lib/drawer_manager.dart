@@ -53,6 +53,7 @@ import 'package:provider/provider.dart';
 ///            tileSelections: drawerSelections
 ///        )
 ///    )
+/// 
 /// ```
 class DrawerManagerProvider extends ChangeNotifier {
   int _currentDrawerSelection = 0;
@@ -103,12 +104,14 @@ class DrawerManagerProvider extends ChangeNotifier {
 ///      CounterPage(),
 ///      TheMACPage()
 ///    ];
+/// 
 /// ```
 ///
 ///
 /// Here is an example of a DrawerManager with drawerElements and drawerSelections added.
 ///
 /// ```dart
+/// 
 ///     drawer: DrawerManager(
 ///         context: context,
 ///         drawerElements: [
@@ -130,6 +133,7 @@ class DrawerManagerProvider extends ChangeNotifier {
 ///         ],
 ///         tileSelections: drawerSelections
 ///     )
+/// 
 /// ```
 class DrawerManager extends StatelessWidget {
 
@@ -265,11 +269,12 @@ class DrawerManager extends StatelessWidget {
 ///
 /// The Drawer Tile class is a child of [ListTile](https://api.flutter.dev/flutter/material/ListTile-class.html), but has a required on onTap
 /// attribute, to maintain the selection order. The first [DrawerTile](https://pub.dev/documentation/drawer_manager/latest/drawer_manager/DrawerTile-class.html) will align with the first drawer selection. You 
-/// can have more selections than tiles, but not more [DrawerTile](https://pub.dev/documentation/drawer_manager/latest/drawer_manager/DrawerTile-class.html)s than selections.
-///
-/// Similar to Flutter's [TextEditingController](https://api.flutter.dev/flutter/widgets/TextEditingController-class.html), the Drawer Manager uses
-/// [Provider](https://pub.dev/packages/provider)'s [ChangeNotifier](https://api.flutter.dev/flutter/foundation/ChangeNotifier-class.html) as a parent class
-/// to manage user selection by displaying the Widget selection.
+/// can have more selections than tiles, but not more Drawer Tiles than selections.
+/// 
+/// This happens in the DrawerManagerProvider.selectDrawer method, and it returns from a list 
+/// of onTap functions the position that was tapped. Then it uses that position to set the current 
+/// drawer selection, and notifies the Drawer Manager's body property and any other Consumers to make 
+/// the update for this drawer selection. Lastly, it calls to the onTap that was passed from the Drawer Tile.
 /// 
 /// ```dart
 ///
@@ -281,14 +286,12 @@ class DrawerManager extends StatelessWidget {
 ///  }
 ///
 /// ```
-/// 
-/// This happens in the DrawerManagerProvider.selectDrawer method, and it basically returns from a list 
-/// of onTap functions the position that was tapped. Then it uses that position to set the current 
-/// drawer selection, and notifies the Drawer Manager's body property and any other Consumers 
-/// to make the update for this drawer selection.
 ///
+/// Similar to Flutter's [TextEditingController](https://api.flutter.dev/flutter/widgets/TextEditingController-class.html), the Drawer Manager uses
+/// [Provider](https://pub.dev/packages/provider)'s [ChangeNotifier](https://api.flutter.dev/flutter/foundation/ChangeNotifier-class.html) as a parent class
+/// to manage user selection by displaying the Widget selection.
 ///
-/// Selections can be more than the Drawer Tiles, but the tiles can not be more than the selections.
+/// Here is an example of a DrawerManager with drawerElements and more drawerSelections added than Drawer Tiles.
 ///
 /// ```dart
 ///
@@ -297,12 +300,11 @@ class DrawerManager extends StatelessWidget {
 ///      CounterPage(),
 ///      TheMACPage()
 ///    ];
+/// 
 /// ```
 ///
-///
-/// Here is an example of a DrawerManager with drawerElements and more drawerSelections added than [DrawerTile](https://pub.dev/documentation/drawer_manager/latest/drawer_manager/DrawerTile-class.html)s.
-///
 /// ```dart
+/// 
 ///     drawer: DrawerManager(
 ///         context: context,
 ///         drawerElements: [
@@ -324,6 +326,7 @@ class DrawerManager extends StatelessWidget {
 ///         ],
 ///         tileSelections: drawerSelections
 ///     )
+/// 
 /// ```
 class DrawerTile extends ListTile {
 

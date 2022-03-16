@@ -65,7 +65,7 @@ dependencies:
 
     ...
   provider: 6.0.2
-  drawer_manager: 0.0.1
+  drawer_manager: 0.0.3
 
 ```
 
@@ -140,6 +140,8 @@ The Drawer Manager is able to manage the selections with the [DrawerTile](https:
 
 Note: The [DrawerTile](https://pub.dev/documentation/drawer_manager/latest/drawer_manager/DrawerTile-class.html) class is a child of [ListTile](https://api.flutter.dev/flutter/material/ListTile-class.html), but has a required on onTap attribute, to maintain the selection order. The first [DrawerTile](https://pub.dev/documentation/drawer_manager/latest/drawer_manager/DrawerTile-class.html) will align with the first drawer selection. You can have more selections than tiles, but not more [DrawerTile](https://pub.dev/documentation/drawer_manager/latest/drawer_manager/DrawerTile-class.html)s than selections.
 
+
+## Alternate Usage
 
 Alternatively, you can use a Column, or a ListView for drawer elements, to easily adapt Drawer Manager into existing Drawer implementations.
 
