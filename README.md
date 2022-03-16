@@ -12,8 +12,8 @@ The Drawer Manager class has the ability to swap Scaffold body contents, using a
   <tr center>
     <td  align="center"><p>Open Drawer</p></td>
     <td  align="center"><p>Hello, Flutter!</p></td>
-    <td  align="center"><p>Counter Sample</p></td>
-    <td  align="center"><p>Mobile Community</p></td>
+    <td  align="center"><p>Counter</p></td>
+    <td  align="center"><p>The MAC</p></td>
     <td  align="center"><p>All Pages</p></td>
   </tr>   
 </table>
