@@ -1,9 +1,9 @@
 
 The Drawer Manager class has the ability to swap Scaffold body contents, using a custom provider.
 
-[[media/drawer_manager_0.png]] [[media/drawer_manager_1.png]] [[images/drawer_manager_2.png]] 
+![Drawer Manager 0](media/drawer_manager_0.png) ![Drawer Manager 1](media/drawer_manager_1.png) ![Drawer Manager 2](media/drawer_manager_2.png)
 
-[[media/drawer_manager.gif]] [[images/drawer_manager_3.png]] 
+![Drawer Manager Gif](media/drawer_manager.gif) ![Drawer Manager 3](media/drawer_manager_3.png)
 
 ## Features
 
@@ -38,8 +38,8 @@ Note: Similar to Flutter's [TextEditingController](https://api.flutter.dev/flutt
 ### Install Provider and Drawer Manager
 ```bash
 
-  pub get provider
-  pub get drawer_manager
+  flutter pub get provider
+  flutter pub get drawer_manager
 
 ```
 
@@ -98,7 +98,7 @@ import 'package:drawer_manager/drawer_manager.dart';
 
 ### Set up drawer manager
 
-The Drawer Manager is able to mange the selections with the [DrawerTile](#) class.
+The Drawer Manager is able to manage the selections with the [DrawerTile](https://pub.dev/documentation/drawer_manager/latest/drawer_manager/DrawerTile-class.html) class.
 
 ```dart
         drawer: DrawerManager(
@@ -125,7 +125,7 @@ The Drawer Manager is able to mange the selections with the [DrawerTile](#) clas
 
 ```
 
-Note: The [DrawerTile](#) class is a child of [ListTile](https://api.flutter.dev/flutter/material/ListTile-class.html), but has a required on onTap attribute, to maintain the selection order. The first [DrawerTile](#) will align with the first drawer selection. You can have more selections than tiles, but not more [DrawerTile](#)s than selections.
+Note: The [DrawerTile](https://pub.dev/documentation/drawer_manager/latest/drawer_manager/DrawerTile-class.html) class is a child of [ListTile](https://api.flutter.dev/flutter/material/ListTile-class.html), but has a required on onTap attribute, to maintain the selection order. The first [DrawerTile](https://pub.dev/documentation/drawer_manager/latest/drawer_manager/DrawerTile-class.html) will align with the first drawer selection. You can have more selections than tiles, but not more [DrawerTile](https://pub.dev/documentation/drawer_manager/latest/drawer_manager/DrawerTile-class.html)s than selections.
 
 
 Alternatively, you can use a Column, or a ListView for drawer elements, to easily adapt Drawer Manager into existing Drawer implementations.
@@ -162,4 +162,4 @@ Alternatively, you can use a Column, or a ListView for drawer elements, to easil
 
 To support this repo, take a look at the [SUPPORT.md](https://github.com/the-mac/drawer_manager/blob/main/SUPPORT.md) file.
 
-To view the documentation on the package, [follow this link](#)
+To view the documentation on the package, [follow this link](https://pub.dev/documentation/drawer_manager/latest/)

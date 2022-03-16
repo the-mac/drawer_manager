@@ -1,5 +1,5 @@
 name: drawer_manager
-description: A Drawer Manager using the provider package. It can use a Column, a ListView or neither.
+description: The Drawer Manager class has the ability to swap Scaffold body contents, using a custom provider.
 version: 0.0.1
 homepage: https://github.com/the-mac/drawer_manager/
 
