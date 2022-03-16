@@ -1,9 +1,22 @@
 
 The Drawer Manager class has the ability to swap Scaffold body contents, using a custom provider.
 
-![Drawer Manager 0](media/drawer_manager_0.png) ![Drawer Manager 1](media/drawer_manager_1.png) ![Drawer Manager 2](media/drawer_manager_2.png)
-
-![Drawer Manager Gif](media/drawer_manager_ezgif_resize.gif) ![Drawer Manager 3](media/drawer_manager_3.png)
+<table border="0">
+  <tr>
+    <td><img width="100" src="media/drawer_manager_0.png"></td>
+    <td><img width="100" src="media/drawer_manager_1.png"></td>
+    <td><img width="100" src="media/drawer_manager_2.png"></td>
+    <td><img width="100" src="media/drawer_manager_3.png"></td>
+    <td><img width="100" src="media/drawer_manager_ezgif_resize.gif"></td>
+  </tr>  
+  <tr center>
+    <td  align="center"><p>Open Drawer</p></td>
+    <td  align="center"><p>Hello, Flutter!</p></td>
+    <td  align="center"><p>Counter Sample</p></td>
+    <td  align="center"><p>Mobile Community</p></td>
+    <td  align="center"><p>All Pages</p></td>
+  </tr>   
+</table>
 
 ## Features
 
