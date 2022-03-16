@@ -1,6 +1,7 @@
 name: drawer_manager
+author: Operators, DBA <operators.dba@gmail.com>
 description: The Drawer Manager class has the ability to swap Scaffold body contents, using a custom provider.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/the-mac/drawer_manager/
 
 # publish_to: 'drawer_manager' # Remove this line if you wish to publish to pub.dev

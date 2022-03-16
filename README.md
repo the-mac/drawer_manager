@@ -3,11 +3,11 @@ The Drawer Manager class has the ability to swap Scaffold body contents, using a
 
 <table border="0">
   <tr>
-    <td><img width="140" src="media/drawer_manager_0.png"></td>
-    <td><img width="140" src="media/drawer_manager_1.png"></td>
-    <td><img width="140" src="media/drawer_manager_2.png"></td>
-    <td><img width="140" src="media/drawer_manager_3.png"></td>
-    <td><img width="140" src="media/drawer_manager_ezgif_resize.gif"></td>
+    <td><img width="140" src="https://raw.githubusercontent.com/the-mac/drawer_manager/main/media/drawer_manager_0.png"></td>
+    <td><img width="140" src="https://raw.githubusercontent.com/the-mac/drawer_manager/main/media/drawer_manager_1.png"></td>
+    <td><img width="140" src="https://raw.githubusercontent.com/the-mac/drawer_manager/main/media/drawer_manager_2.png"></td>
+    <td><img width="140" src="https://raw.githubusercontent.com/the-mac/drawer_manager/main/media/drawer_manager_3.png"></td>
+    <td><img width="140" src="https://raw.githubusercontent.com/the-mac/drawer_manager/main/media/drawer_manager_ezgif_resize.gif"></td>
   </tr>  
   <tr center>
     <td  align="center"><p>Open Drawer</p></td>
@@ -162,7 +162,6 @@ Alternatively, you can use a Column, or a ListView for drawer elements, to easil
         drawer: DrawerManager(
             context: context,
             child: ListView(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                   ...
               ]
