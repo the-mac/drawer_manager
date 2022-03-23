@@ -407,6 +407,13 @@ class DrawerTile extends ListTile {
 
         final dMProvider = Provider.of<DrawerManagerProvider>(context, listen: false);        
         if(onTap != null) {
+
+            final drawerSelectionCount = dMProvider.drawerSelections.length;
+            final drawerTileCount = dMProvider.onTapFunctions.length;
+            
+            if(drawerSelectionCount > 0 && drawerTileCount >= drawerSelectionCount) {
+                dMProvider.onTapFunctions.clear();
+            }
             dMProvider.onTapFunctions.add(onTap);
         } else {
             dMProvider.onTapFunctions.add(getDefaultCallback());
