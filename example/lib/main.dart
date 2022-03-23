@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Widget _getTitleWidget() {
     return Consumer<DrawerManagerProvider>(builder: (context, dmObj, _) {
-      return Text(_getTitle(dmObj.drawer));
+      return Text(_getTitle(dmObj.selection));
     });
   }
 

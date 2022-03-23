@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:share/share.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SocialButton extends InkWell {
@@ -37,7 +37,41 @@ class SocialButton extends InkWell {
         );
 }
 
+class WebViewContainer extends StatelessWidget {
+
+  final String webViewUrl;
+
+  const WebViewContainer(this.webViewUrl, {Key? key}) : super(key: key);
+
+  Widget _buildBody(BuildContext context) {
+
+    return Container(
+        child: WebView(
+          initialUrl: webViewUrl,
+          javascriptMode: JavascriptMode.unrestricted,
+          debuggingEnabled: false,
+        ),
+        decoration: BoxDecoration(
+            border: Border.all(color: Colors.blue)
+        )
+    );
+  }
+
+  @override
+  Widget build(context) {
+    return Scaffold(
+      appBar: AppBar(),
+      body: _buildBody(context)
+    );
+  }
+}
+
 class TheMACPage extends StatelessWidget {
+
+  static const shareURL = 'https://pub.dev/packages/drawer_manager';
+  static const facebookURL = 'https://m.facebook.com/groups/694991294608697/';
+  static const githubURL = 'https://github.com/the-mac';
+
   const TheMACPage({Key? key}) : super(key: key);
 
   @override
@@ -65,11 +99,13 @@ class TheMACPage extends StatelessWidget {
             height: 250,
           ),
           SocialButton(
-            'Share Driver Manager',
+            'View Drawer Manager',
             const Color(0xff0085E0),
             Icons.share,
             onTap: () {
-                Share.share('https://pub.dev/packages/drawer_manager', subject: 'Check out our package on pub.dev!');
+                Navigator.push<void>(
+                  context, MaterialPageRoute( builder: (BuildContext context) => const WebViewContainer(shareURL))
+                );
             }
           ),
           SocialButton(
@@ -77,7 +113,9 @@ class TheMACPage extends StatelessWidget {
             const Color(0xff39579A),
             FontAwesomeIcons.facebookF,
             onTap: () {
-
+                Navigator.push<void>(
+                  context, MaterialPageRoute( builder: (BuildContext context) => const WebViewContainer(facebookURL))
+                );
             }
           ),
           SocialButton(
@@ -85,7 +123,9 @@ class TheMACPage extends StatelessWidget {
             Colors.black,
             FontAwesomeIcons.github,
             onTap: () {
-
+                Navigator.push<void>(
+                  context, MaterialPageRoute( builder: (BuildContext context) => const WebViewContainer(githubURL))
+                );
             }
           ),
         ],

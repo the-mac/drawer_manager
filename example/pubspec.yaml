@@ -14,7 +14,7 @@ dependencies:
 
   cupertino_icons: 1.0.4
   font_awesome_flutter: 9.2.0
-  share: 2.0.4
+  webview_flutter: 3.0.1
 
   drawer_manager:
     path: ../

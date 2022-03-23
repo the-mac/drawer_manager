@@ -60,7 +60,7 @@ class DrawerManagerProvider extends ChangeNotifier {
   late List<Widget> drawerSelections = <Widget>[];
   late List<GestureTapCallback> onTapFunctions = <GestureTapCallback>[];
 
-  int get drawer => _currentDrawerSelection;
+  int get selection => _currentDrawerSelection;
 
   Widget get body {
     return Consumer<DrawerManagerProvider>(builder: (context, dmObj, _) {

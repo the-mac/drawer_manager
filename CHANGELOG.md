@@ -9,3 +9,10 @@
 ## 0.0.3
 
 * This version updated the documentation and the LICENSE.
+
+## 0.0.4
+
+* Fix for issue "Reloading duplicates the onTaps".
+* Updated the drawer property to selection.
+* Updated example to use the selection property.
+* Updated example to use a WebViewContainer.
